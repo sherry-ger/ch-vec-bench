@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vector-benchmark"
+version = "0.1.0"
+description = "ClickHouse vector compression benchmark harness"
+requires-python = ">=3.11"
+dependencies = [
+    "clickhouse-connect[async]>=0.7",
+    "typer[all]>=0.12",
+    "rich>=13",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "python-dotenv>=1.0",
+    "h3>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio"]
+hf = ["datasets>=2.18", "Pillow>=10.0", "requests>=2.31"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]

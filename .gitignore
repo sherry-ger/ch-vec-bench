@@ -1,0 +1,30 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Environment — never commit credentials
+.env
+
+# Benchmark artifacts
+*.npy
+vectors_query_meta.json
+results*.json
+results*.csv
+benchmark*.json
+
+# Internal planning docs — not for public repo
+prompt_plan.md
+specs.md
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
