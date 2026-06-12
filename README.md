@@ -1,4 +1,4 @@
-# ClickHouse Vector Benchmark
+# ClickHouse Cloud Vector Benchmark
 
 Benchmark every ClickHouse vector search strategy side-by-side: recall accuracy, query latency, and on-disk compression — using your own vectors or a built-in synthetic dataset.
 
